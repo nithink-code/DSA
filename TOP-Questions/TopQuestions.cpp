@@ -183,3 +183,50 @@ int modularExponentiation(int x, int n, int m) {
 	return ans;
 }
 */
+
+/*
+You are given an integer N, create a 2D array named ‘grid’ of size N x N. 
+
+The diagonal of the grid should be filled with 0.
+The lower side should be filled with -1s.
+The upper side should be filled with 1s.
+
+
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+
+int main() {
+    int N;
+    cin>>N;
+    vector<vector<int>>grid(N,vector<int>(N,0));
+        // Diagonal to be 0
+        for(int i=0;i<N;i++){
+            grid[i][i]=0;
+        }
+        // Lower side should be -1
+        for(int i=1;i<N;i++){
+            for(int j=0;j<i;j++){
+                grid[i][j]=-1;
+            }
+        }
+        // Upper side should be 1
+        for(int i=0;i<N;i++){
+            for(int j=i+1;j<N;j++){
+                grid[i][j]=1;
+            }
+        }
+    
+    // Don't change the code below
+    for(int i = 0; i < N; i++){
+        for(int j = 0; j < N; j++){
+            cout<<grid[i][j]<<" ";
+        }    
+        cout<<endl;
+    }
+    return 0;
+}
+*/
