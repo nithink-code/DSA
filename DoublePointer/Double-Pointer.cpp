@@ -20,3 +20,17 @@ int main()
   return 0;
 }
 */
+// Move all negative numbers to one side and all positive to another side
+/*
+void arrange(vector<int>& arr,int n){
+  int j=0;
+ for(int i=0;i<n;i++){
+     if(arr[i]>0){
+         if(i!=j){
+             swap(arr[i],arr[j]);
+             j++;
+         }
+     }
+ }
+}
+*/
