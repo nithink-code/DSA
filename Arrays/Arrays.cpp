@@ -20,37 +20,41 @@
 // }
 
 // To find second largest element in a given array
-//  #include<iostream>
-//   using namespace std;
-//   int secondmaxelement(int array[],int size);
-//   int main(){
-//     int array[]={0,1,2,3,4,5,6,7,9,10};
-//     int result=secondmaxelement(array,10);
-//     cout<<result;
-//     return 0;
-//   }
-//   int secondmaxelement(int array[],int size){
-//     int max1;  //First highest number in array
-//     int max2;  //Second highest number in array
-//     if(array[0]>array[1]){
-//         max1=array[0];
-//         max2=array[1];
-//     }
-//     else {
-//         max1=array[1];
-//         max2=array[0];
-//     }
-//     for(int i=2;i<size;i++){
-//         if(array[i]>max1){
-//             max2=max1;
-//             max1=array[i];
-//         }
-//         else if(array[i]>max2 && array[i]<max1){
-//             max2=array[i];
-//         }
-//     }
-//     return max2;
-//   }
+ #include<iostream>
+  using namespace std;
+  int secondmaxelement(int array[],int size);
+  int main(){
+    int array[10]={};
+    cout<<"Enter elements of the array"<<endl;
+    for(int i=0;i<10;i++){
+        cin>>array[i];
+    }
+    int result=secondmaxelement(array,10);
+    cout<<result;
+    return 0;
+  }
+  int secondmaxelement(int array[],int size){
+    int max1;  //First highest number in array
+    int max2;  //Second highest number in array
+    if(array[0]>array[1]){
+        max1=array[0];
+        max2=array[1];
+    }
+    else {
+        max1=array[1];
+        max2=array[0];
+    }
+    for(int i=2;i<size;i++){
+        if(array[i]>max1){
+            max2=max1;
+            max1=array[i];
+        }
+        else if(array[i]>max2 && array[i]<max1){
+            max2=array[i];
+        }
+    }
+    return max2;
+  }
 
 // Rotate the given array k times 
 
