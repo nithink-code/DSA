@@ -23,6 +23,13 @@ void num1(int& n){
     n++;
 }
 // Normal function
+
+// IT is a bad practice and no value will be returned because all are local  variables
+int& fun(int a){
+  int num=a;
+  int& n=num;
+  return n;
+}
 void num2(int n){
     n++;
 }
