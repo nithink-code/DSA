@@ -1,0 +1,9 @@
+{
+  "editor.fontFamily": "Space Mono",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
+  "files.associations": {
+    "ostream": "cpp",
+    "iostream": "cpp"
+  }
+}
