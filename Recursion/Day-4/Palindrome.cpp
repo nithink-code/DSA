@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-bool check_palindrome(int i, int j,string& str){
+bool check_palindrome(int i,int j,string& str){
       // Base case
       if(i>j){
         return true;
