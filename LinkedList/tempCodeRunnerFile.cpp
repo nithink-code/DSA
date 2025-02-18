@@ -1,0 +1,1 @@
+ insertatEle(tail,3,4);
