@@ -179,7 +179,7 @@ int main()
    insertAtPos(tail,head,3,15);
    insertAtEnd(tail,25);
    insertAtEnd(tail,30);
-   tail->next = head->next;
+//    tail->next = head->next;
 
 //    if(checkLoop(head)){
 //     cout<<"Cycle Detected"<<endl;
@@ -188,12 +188,12 @@ int main()
 //     cout<<"No Cycle"<<endl;
 //    }
    
-  Node* ans = getstartNode(head);
-  cout<<"Start Node of List ->"<<ans->data<<endl;
+//   Node* ans = getstartNode(head);
+//   cout<<"Start Node of List ->"<<ans->data<<endl;
 
   // Removing Loop
-  removeLoop(head);
+//   removeLoop(head);
   print(head);
-  Node* ans1 = checkLoop(head);
+//   Node* ans1 = checkLoop(head);
  return 0;
 }
